@@ -78,7 +78,7 @@ variable "sns_kms_enabled" {
   description = <<-DOC
   Whether or not to enable KMS encryption in the SNS topic created
   DOC
-  
-  type        = boolean
-  default     = false 
+
+  type    = bool
+  default = false
 }
