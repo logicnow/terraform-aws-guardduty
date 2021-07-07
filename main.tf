@@ -13,7 +13,7 @@ resource "aws_guardduty_detector" "guardduty" {
 #-----------------------------------------------------------------------------------------------------------------------
 module "sns_topic" {
 
-  source = "git@github.com:logicnow/terraform-aws-guardduty.git?ref=master"
+  source = "git@github.com:logicnow/terraform-aws-sns.git"
   count  = local.create_sns_topic ? 1 : 0
 
   subscribers     = var.subscribers
