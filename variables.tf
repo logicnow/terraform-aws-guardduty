@@ -73,3 +73,12 @@ variable "cloudwatch_event_rule_pattern_detail_type" {
   type        = string
   default     = "GuardDuty Finding"
 }
+
+variable "sns_kms_enabled" {
+  description = <<-DOC
+  Whether or not to enable KMS encryption in the SNS topic created
+  DOC
+  
+  type        = boolean
+  default     = false 
+}
