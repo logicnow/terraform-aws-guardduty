@@ -22,6 +22,8 @@ module "sns_topic" {
 
   attributes = concat(module.this.attributes, ["guardduty"])
   context    = module.this.context
+    
+  kms_encryption_enabled = var.sns_kms_enabled
 }
 
 module "findings_label" {
