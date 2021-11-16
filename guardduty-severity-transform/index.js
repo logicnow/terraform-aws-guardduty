@@ -1,3 +1,5 @@
+// https://jswheeler.medium.com/integrating-aws-guardduty-with-atlassian-opsgenie-using-lambda-dd2fed16621a
+//
 var AWS = require('aws-sdk');
 exports.handler = (event, context, callback) => {
     console.log(event);
